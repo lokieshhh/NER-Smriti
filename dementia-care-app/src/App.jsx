@@ -4,6 +4,29 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+const TRANSLATIONS = {
+  en: {
+    kicker: "North East India · Cognitive care",
+    title: "NER Smriti",
+    lead: "Five gentle games for daily recall, attention, pattern sense, mood, and kitchen safety — with Assamese, Khasi, Naga, and Garo textures of home.",
+  },
+  as: {
+    kicker: "উত্তৰ পূৱ ভাৰত · চিন্তাশক্তিৰ যত্ন",
+    title: "NER স্মৃতি",
+    lead: "স্মৃতি, মনোযোগ, আৰু ৰান্ধনিৰ সুৰক্ষাৰ বাবে পাঁচটা মৃদু খেল — ঘৰৰ অসমীয়া, খাসী, নাগা আৰু গাৰো সোৱাদেৰে।",
+  },
+  mni: {
+    kicker: "North East India · Cognitive care",
+    title: "NER Smriti",
+    lead: "Games ানি memory, attention, ৱা kitchen safety গীদমক — Meitei home touch গা।",
+  },
+  kha: {
+    kicker: "North East India · Cognitive care",
+    title: "NER Smriti",
+    lead: "Games baroh ka jingïatreisynia, ka met, bad ka kitchen safety — da ka Khasi khynraw ka iing.",
+  },
+};
+
 function App() {
   const [count, setCount] = useState(0)
 
