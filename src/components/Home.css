@@ -1,0 +1,116 @@
+.home {
+  --forest: #1f4d3a;
+  --forest-dark: #16382a;
+  --cream: #faf6ec;
+  --ink: #2b2118;
+  --accent-tea: #6b8f47;
+  --accent-gold: #c9a24b;
+  --accent-clay: #b5652f;
+  --accent-moss: #3f7d6b;
+
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Noto Sans", sans-serif;
+  padding: 32px 20px 48px;
+  box-sizing: border-box;
+}
+
+.home__header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.home__eyebrow {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: var(--forest);
+  font-weight: 700;
+}
+
+.home__title {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--forest-dark);
+  letter-spacing: 0.5px;
+}
+
+.home__subtitle {
+  margin: 6px 0 0;
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Noto Serif", serif;
+  color: var(--forest);
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .home__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home__card {
+  --card-accent: var(--accent-tea);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-height: 160px;
+  padding: 22px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  border-top: 8px solid var(--card-accent);
+  box-shadow: 0 6px 18px rgba(31, 77, 58, 0.12);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home__card:hover,
+.home__card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(31, 77, 58, 0.18);
+}
+
+.home__card:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 3px;
+}
+
+.home__card:active {
+  transform: translateY(0);
+}
+
+.home__card-emoji {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.home__card-label {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.home__card-hint {
+  font-size: 15px;
+  color: #6b6157;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home__card {
+    transition: none;
+  }
+}
